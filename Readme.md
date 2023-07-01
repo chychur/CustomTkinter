@@ -19,7 +19,7 @@
 
 <div align="center">
 <h3>
-Official website: https://customtkinter.tomschimansky.com
+Official Website: https://customtkinter.tomschimansky.com
 </h3>
 </div>
 
@@ -36,15 +36,18 @@ desktop platforms (Windows, macOS, Linux).
 
 ![](documentation_images/complex_example_light_macOS.png)
 | _`complex_example.py` on macOS in light mode and standard 'blue' theme_
+
 ###
 
-
 ## Installation
+
 Install the module with pip:
+
 ```
 pip3 install customtkinter
 ```
-**Update existing installation:** ```pip3 install customtkinter --upgrade```\
+
+**Update existing installation:** `pip3 install customtkinter --upgrade`\
 (update as often as possible because this library is under active development)
 
 ## Documentation
@@ -54,7 +57,9 @@ The **official** documentation can be found here:
 **➡️ https://customtkinter.tomschimansky.com/documentation**.
 
 ## Example Program
+
 To test customtkinter you can try this simple example with only a single button:
+
 ```python
 import customtkinter
 
@@ -73,6 +78,7 @@ button.place(relx=0.5, rely=0.5, anchor=customtkinter.CENTER)
 
 app.mainloop()
 ```
+
 which results in the following window on macOS:
 
 <img src="documentation_images/single_button_macOS.png" width="400"/>
@@ -90,6 +96,7 @@ CustomTkinter can adapt to the Windows 10/11 light or dark mode:
 https://user-images.githubusercontent.com/66446067/204672968-6584f360-4c52-434f-9c16-25761341368b.mp4
 
 | _`complex_example.py` on Windows 11 with system appearance mode change and standard 'blue' theme_
+
 ###
 
 On macOS you either need python3.10 or higher or the anaconda python
@@ -98,25 +105,30 @@ version to get a dark window header (Tcl/Tk >= 8.6.9 required):
 https://user-images.githubusercontent.com/66446067/204673854-b6cbcfda-d9a1-4425-92a3-5b57d7f2fd6b.mp4
 
 | _`complex_example.py` on macOS with system appearance mode change, user-scaling change and standard 'blue' theme_
+
 ###
 
 ### Button with images
+
 It's possible to put an image on a CTkButton. You just have to
-pass a PhotoImage object to the CTkButton with the ``image`` argument.
-If you want no text at all you have to set ``text=""`` or you specify
-how to position the text and image at once with the ``compound`` option:
+pass a PhotoImage object to the CTkButton with the `image` argument.
+If you want no text at all you have to set `text=""` or you specify
+how to position the text and image at once with the `compound` option:
 
 ![](documentation_images/image_example_dark_Windows.png)
 | _`image_example.py` on Windows 11_
+
 ###
 
 ### Scrollable Frames
+
 Scrollable frames are possible in vertical or horizontal orientation and can be combined
 with any other widgets.
 ![](documentation_images/scrollable_frame_example_Windows.png)
 | _`scrollable_frame_example.py` on Windows 11_
 
 ### Integration of TkinterMapView widget
+
 In the following example I used a TkinterMapView which integrates
 well with a CustomTkinter program. It's a tile based map widget which displays
 OpenStreetMap or other tile based maps:
